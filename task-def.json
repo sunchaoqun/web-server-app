@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "nginx",
-      "image": "your-customized-nginx-image",
+      "image": "public.ecr.aws/s0k4s5w7/nginx-reverse-proxy:latest",
       "memory": 256,
       "cpu": 256,
       "essential": true,
@@ -18,7 +18,7 @@
     },
     {
       "name": "app",
-      "image": "your-web-server-app-image",
+      "image": "public.ecr.aws/s0k4s5w7/tomcat-web:latest",
       "memory": 256,
       "cpu": 256,
       "essential": true
